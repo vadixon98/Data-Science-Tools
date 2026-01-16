@@ -24,6 +24,7 @@ This repository contains educational materials and resources about **Data Scienc
 - 🎯 **Ecosystem Overview** - Comprehensive guide to the data science landscape
 - 🛠️ **Tools Documentation** - Essential tools for data analysis and visualization
 - 📊 **Best Practices** - Industry-standard workflows and methodologies
+- 💻 **Example Scripts** - Ready-to-run Python scripts demonstrating key concepts
 
 ## 📁 Repository Contents
 
@@ -32,17 +33,67 @@ Data-Science-Tools/
 │
 ├── 📓 DataScienceEcosystem.htm      # Interactive HTML notebook
 ├── 📄 DataScienceEcosystem (1).pdf  # PDF documentation
-└── 📝 README.md                     # This file
+├── 📝 README.md                      # This file
+├── 📋 requirements.txt               # Python dependencies
+├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md # Script suggestions guide
+└── 📂 examples/                      # Example Python scripts
+    ├── __init__.py
+    ├── arithmetic_operations.py      # Basic arithmetic examples
+    ├── time_converter.py             # Time conversion utility
+    └── libraries_demo.py            # Pandas, NumPy, Matplotlib demos
 ```
 
 ## 🔧 Tools Covered
 
-- **Programming Languages**: Python, R, SQL
+- **Programming Languages**: Python, R, SQL, Java
 - **Notebooks**: Jupyter, Colab, RStudio
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
+- **Libraries**: Pandas, TensorFlow, ggplot2, NumPy, Matplotlib
+- **IDEs**: RStudio, Spyder, Visual Studio Code
 - **Frameworks**: Scikit-learn, TensorFlow, PyTorch
 - **Visualization**: Tableau, Power BI, Plotly
 - **Cloud Platforms**: AWS, Azure, GCP
+
+## 💻 Example Scripts
+
+This repository includes practical Python scripts extracted from the notebook:
+
+### 📊 Available Scripts
+
+| Script | Description | Dependencies |
+|--------|-------------|--------------|
+| `arithmetic_operations.py` | Basic arithmetic examples from the notebook | None |
+| `time_converter.py` | Convert time between seconds, minutes, hours, days | None |
+| `libraries_demo.py` | Demonstrates Pandas, NumPy, and Matplotlib | pandas, numpy, matplotlib |
+
+### 🎯 Running the Examples
+
+```bash
+# Run arithmetic operations
+python examples/arithmetic_operations.py
+
+# Run time converter with examples
+python examples/time_converter.py
+
+# Run libraries demonstration
+python examples/libraries_demo.py
+```
+
+### 📝 Example Output
+
+**Arithmetic Operations:**
+```
+(3 * 4) + 5 = 17
+200 minutes = 3.3333333333333335 hours
+```
+
+**Time Converter:**
+```
+200 minutes = 3.33 hours
+90 minutes = 1.50 hours
+2.5 hours = 150 minutes
+```
+
+For more script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRIPTS_SUGGESTIONS.md).
 
 ## 🚀 Quick Start
 
@@ -52,11 +103,28 @@ Data-Science-Tools/
    cd Data-Science-Tools
    ```
 
-2. **Open the notebook**
+2. **Install dependencies** (optional, for running example scripts)
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Explore the content**
    - Open `DataScienceEcosystem.htm` in your browser
    - Or view the PDF: `DataScienceEcosystem (1).pdf`
 
-3. **Start exploring!**
+4. **Run example scripts**
+   ```bash
+   # Basic arithmetic operations
+   python examples/arithmetic_operations.py
+   
+   # Time conversion utility
+   python examples/time_converter.py
+   
+   # Data science libraries demo
+   python examples/libraries_demo.py
+   ```
+
+5. **Start exploring!**
    - Follow along with the examples
    - Experiment with the code
    - Customize for your needs
@@ -66,6 +134,9 @@ Data-Science-Tools/
 - [Jupyter Documentation](https://jupyter.org/documentation)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [Data Science Tools Guide](https://www.datacamp.com/learn/data-science-tools)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [NumPy Documentation](https://numpy.org/doc/)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 
 ## 🤝 Contributing
 
