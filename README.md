@@ -20,11 +20,9 @@ This repository contains educational materials and resources about **Data Scienc
 
 ## ✨ Features
 
-- 📓 **Interactive Notebook** - Hands-on Jupyter notebook exploring data science tools
-- 🎯 **Ecosystem Overview** - Comprehensive guide to the data science landscape
-- 🛠️ **Tools Documentation** - Essential tools for data analysis and visualization
-- 📊 **Best Practices** - Industry-standard workflows and methodologies
+- 📓 **Interactive Notebook** - HTML notebook exploring data science tools
 - 💻 **Example Scripts** - Ready-to-run Python scripts demonstrating key concepts
+- 📚 **Educational Resources** - Tools, libraries, and ecosystem overview
 
 ## 📁 Repository Contents
 
@@ -35,9 +33,9 @@ Data-Science-Tools/
 ├── 📄 DataScienceEcosystem (1).pdf  # PDF documentation
 ├── 📝 README.md                      # This file
 ├── 📋 requirements.txt               # Python dependencies
-├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md # Script suggestions guide
 ├── 🚫 .gitignore                     # Git ignore rules
 ├── 📜 LICENSE                         # MIT License
+├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md  # Future script ideas (optional)
 └── 📂 examples/                       # Example Python scripts
     ├── README.md                      # Examples documentation
     ├── __init__.py
@@ -59,48 +57,18 @@ Data-Science-Tools/
 
 ## 💻 Example Scripts
 
-This repository includes practical Python scripts extracted from the notebook:
-
-### 📊 Available Scripts
+Practical Python scripts extracted from the notebook:
 
 | Script | Description | Dependencies |
 |--------|-------------|--------------|
 | `arithmetic_operations.py` | Basic arithmetic examples from the notebook | None |
 | `time_converter.py` | Convert time between seconds, minutes, hours, days | None |
 | `libraries_demo.py` | Demonstrates Pandas, NumPy, and Matplotlib | pandas, numpy, matplotlib |
+| `run_all.py` | Run all examples in sequence | See individual scripts |
 
-### 🎯 Running the Examples
+**Quick run:** `python examples/run_all.py` or run scripts individually.
 
-```bash
-# Run arithmetic operations
-python examples/arithmetic_operations.py
-
-# Run time converter with examples
-python examples/time_converter.py
-
-# Run libraries demonstration
-python examples/libraries_demo.py
-
-# Run all examples at once
-python examples/run_all.py
-```
-
-### 📝 Example Output
-
-**Arithmetic Operations:**
-```
-(3 * 4) + 5 = 17
-200 minutes = 3.3333333333333335 hours
-```
-
-**Time Converter:**
-```
-200 minutes = 3.33 hours
-90 minutes = 1.50 hours
-2.5 hours = 150 minutes
-```
-
-For more script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRIPTS_SUGGESTIONS.md).
+For future script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRIPTS_SUGGESTIONS.md).
 
 ## 🚀 Quick Start
 
@@ -121,14 +89,11 @@ For more script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRIPT
 
 4. **Run example scripts**
    ```bash
-   # Basic arithmetic operations
+   # Run all examples
+   python examples/run_all.py
+   
+   # Or run individually (see table above)
    python examples/arithmetic_operations.py
-   
-   # Time conversion utility
-   python examples/time_converter.py
-   
-   # Data science libraries demo
-   python examples/libraries_demo.py
    ```
 
 5. **Start exploring!**
