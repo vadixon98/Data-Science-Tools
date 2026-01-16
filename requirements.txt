@@ -1,0 +1,14 @@
+# Data Science Tools - Required Packages
+# Install with: pip install -r requirements.txt
+
+# Core data science libraries
+pandas>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.4.0
+
+# Optional: Machine learning library
+# tensorflow>=2.6.0  # Uncomment if needed
+
+# Optional: HTML parsing (for extract_notebook_content.py)
+# beautifulsoup4>=4.9.0  # Uncomment if needed
+
