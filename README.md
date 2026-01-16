@@ -37,12 +37,14 @@ Data-Science-Tools/
 ├── 📋 requirements.txt               # Python dependencies
 ├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md # Script suggestions guide
 ├── 🚫 .gitignore                     # Git ignore rules
-└── 📂 examples/                      # Example Python scripts
+├── 📜 LICENSE                         # MIT License
+└── 📂 examples/                       # Example Python scripts
     ├── README.md                      # Examples documentation
     ├── __init__.py
     ├── arithmetic_operations.py      # Basic arithmetic examples
     ├── time_converter.py             # Time conversion utility
-    └── libraries_demo.py             # Pandas, NumPy, Matplotlib demos
+    ├── libraries_demo.py             # Pandas, NumPy, Matplotlib demos
+    └── run_all.py                     # Run all examples script
 ```
 
 ## 🔧 Tools Covered
@@ -78,6 +80,9 @@ python examples/time_converter.py
 
 # Run libraries demonstration
 python examples/libraries_demo.py
+
+# Run all examples at once
+python examples/run_all.py
 ```
 
 ### 📝 Example Output
@@ -150,7 +155,7 @@ Contributions are welcome! Feel free to:
 
 ## 📄 License
 
-This project is open source and available for educational purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ⭐ Show Support
 

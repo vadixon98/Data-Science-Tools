@@ -46,9 +46,25 @@ Install required dependencies:
 pip install -r ../requirements.txt
 ```
 
+### 4. `run_all.py`
+Convenience script to run all example scripts in sequence.
+
+**Run it:**
+```bash
+python examples/run_all.py
+```
+
+## 📦 Installation
+
+Install required dependencies:
+```bash
+pip install -r ../requirements.txt
+```
+
 ## 📝 Notes
 
 - Generated plot images (`.png` files) are automatically ignored by git
 - All scripts include error handling and documentation
 - Scripts can be run independently or imported as modules
+- Use `run_all.py` to verify all scripts work correctly
 
