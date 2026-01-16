@@ -73,7 +73,9 @@ def matplotlib_demo():
     plt.grid(True, alpha=0.3)
     
     # Save the plot
-    output_file = 'examples/plot.png'
+    import os
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_file = os.path.join(script_dir, 'plot.png')
     plt.savefig(output_file, dpi=150, bbox_inches='tight')
     print(f"Plot saved as '{output_file}'")
     print("Note: Close the plot window to continue (if displayed)")

@@ -8,7 +8,7 @@
 
 **A comprehensive collection of data science tools and ecosystem resources**
 
-[📚 Documentation](#) • [💻 Notebook](#) • [🛠️ Tools](#)
+[📚 Documentation](#-overview) • [💻 Examples](#-example-scripts) • [🛠️ Quick Start](#-quick-start)
 
 ---
 
@@ -36,11 +36,13 @@ Data-Science-Tools/
 ├── 📝 README.md                      # This file
 ├── 📋 requirements.txt               # Python dependencies
 ├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md # Script suggestions guide
+├── 🚫 .gitignore                     # Git ignore rules
 └── 📂 examples/                      # Example Python scripts
+    ├── README.md                      # Examples documentation
     ├── __init__.py
     ├── arithmetic_operations.py      # Basic arithmetic examples
     ├── time_converter.py             # Time conversion utility
-    └── libraries_demo.py            # Pandas, NumPy, Matplotlib demos
+    └── libraries_demo.py             # Pandas, NumPy, Matplotlib demos
 ```
 
 ## 🔧 Tools Covered
