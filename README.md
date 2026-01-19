@@ -72,34 +72,19 @@ For future script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRI
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/Data-Science-Tools.git
-   cd Data-Science-Tools
-   ```
-
-2. **Install dependencies** (optional, for running example scripts)
+1. **Install dependencies** (required for `libraries_demo.py`, optional otherwise)
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Explore the content**
+2. **Explore the content**
    - Open `DataScienceEcosystem.htm` in your browser
    - Or view the PDF: `DataScienceEcosystem (1).pdf`
 
-4. **Run example scripts**
+3. **Run example scripts**
    ```bash
-   # Run all examples
    python examples/run_all.py
-   
-   # Or run individually (see table above)
-   python examples/arithmetic_operations.py
    ```
-
-5. **Start exploring!**
-   - Follow along with the examples
-   - Experiment with the code
-   - Customize for your needs
 
 ## 📚 Resources
 

@@ -37,7 +37,6 @@ ENV/
 examples/*.png
 examples/*.jpg
 examples/*.jpeg
-examples/plot.png
 examples/analysis.png
 
 # OS
