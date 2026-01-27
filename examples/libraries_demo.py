@@ -7,7 +7,14 @@ Demonstrates basic usage of the data science libraries mentioned in the notebook
 - Matplotlib (visualization)
 """
 
+import sys
 from typing import TYPE_CHECKING
+
+# Check Python version
+if sys.version_info < (3, 7):
+    sys.exit("Error: Python 3.7+ required. Current version: {}.{}".format(
+        sys.version_info.major, sys.version_info.minor
+    ))
 
 if TYPE_CHECKING:
     import pandas as pd
@@ -19,8 +26,13 @@ try:
     import matplotlib.pyplot as plt
     LIBRARIES_AVAILABLE: bool = True
 except ImportError as e:
-    print(f"Warning: Some libraries are not installed. {e}")
-    print("Please install required packages: pip install pandas numpy matplotlib")
+    missing_lib = str(e).split("'")[1] if "'" in str(e) else "unknown"
+    print(f"\n⚠️  Warning: Required library not installed: {missing_lib}")
+    print(f"   Error details: {e}")
+    print("\n💡 To fix this, run:")
+    print("   pip install pandas numpy matplotlib")
+    print("   or")
+    print("   pip install -r ../requirements.txt\n")
     LIBRARIES_AVAILABLE: bool = False
 
 

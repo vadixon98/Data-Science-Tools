@@ -9,6 +9,14 @@ Examples:
 - Time conversion: 200 minutes to hours
 """
 
+import sys
+
+# Check Python version
+if sys.version_info < (3, 7):
+    sys.exit("Error: Python 3.7+ required. Current version: {}.{}".format(
+        sys.version_info.major, sys.version_info.minor
+    ))
+
 
 def main() -> None:
     """Main function to demonstrate arithmetic operations"""

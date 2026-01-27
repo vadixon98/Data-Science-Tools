@@ -10,6 +10,12 @@ import subprocess
 import sys
 from typing import List
 
+# Check Python version
+if sys.version_info < (3, 7):
+    sys.exit("Error: Python 3.7+ required. Current version: {}.{}".format(
+        sys.version_info.major, sys.version_info.minor
+    ))
+
 
 def run_script(script_name: str) -> bool:
     """Run a Python script and display results"""

@@ -86,6 +86,38 @@ For future script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRI
    python examples/run_all.py
    ```
 
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**Python Version Error**
+- **Problem:** Scripts show "Python 3.7+ required"
+- **Solution:** Upgrade Python to 3.7 or higher. Check version with `python --version`
+
+**Import Errors (libraries_demo.py)**
+- **Problem:** `ModuleNotFoundError` for pandas, numpy, or matplotlib
+- **Solution:** Install dependencies: `pip install -r requirements.txt`
+- **Alternative:** Install individually: `pip install pandas numpy matplotlib`
+
+**Permission Errors**
+- **Problem:** Permission denied when running scripts
+- **Solution:** Ensure you have execute permissions, or use `python examples/script_name.py`
+
+**Plot Not Saving**
+- **Problem:** `libraries_demo.py` plot doesn't save
+- **Solution:** Check write permissions in the `examples/` directory
+
+### Platform-Specific Notes
+
+- **Windows:** Use `python` instead of `python3` in commands
+- **macOS/Linux:** May need `python3` and `pip3` instead of `python` and `pip`
+- **Virtual Environments:** Recommended to use a virtual environment:
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
+  pip install -r requirements.txt
+  ```
+
 ## 📚 Resources
 
 - [Jupyter Documentation](https://jupyter.org/documentation)

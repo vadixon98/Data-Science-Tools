@@ -5,7 +5,14 @@ A comprehensive time converter based on the 200/60 example from the notebook.
 Converts time between different units: seconds, minutes, hours, and days.
 """
 
+import sys
 from typing import Dict
+
+# Check Python version
+if sys.version_info < (3, 7):
+    sys.exit("Error: Python 3.7+ required. Current version: {}.{}".format(
+        sys.version_info.major, sys.version_info.minor
+    ))
 
 
 def time_converter(value: float, from_unit: str, to_unit: str) -> float:
@@ -32,10 +39,17 @@ def time_converter(value: float, from_unit: str, to_unit: str) -> float:
     }
     
     # Validate units
+    valid_units = list(conversions.keys())
     if from_unit not in conversions:
-        raise ValueError(f"Invalid source unit: {from_unit}. Must be one of {list(conversions.keys())}")
+        raise ValueError(
+            f"Invalid source unit: '{from_unit}'. "
+            f"Must be one of: {', '.join(valid_units)}"
+        )
     if to_unit not in conversions:
-        raise ValueError(f"Invalid target unit: {to_unit}. Must be one of {list(conversions.keys())}")
+        raise ValueError(
+            f"Invalid target unit: '{to_unit}'. "
+            f"Must be one of: {', '.join(valid_units)}"
+        )
     
     # Convert to seconds first, then to target unit
     seconds: float = value * conversions[from_unit]
