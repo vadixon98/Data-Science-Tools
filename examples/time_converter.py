@@ -6,7 +6,7 @@ Converts time between different units: seconds, minutes, hours, and days.
 """
 
 
-def time_converter(value, from_unit, to_unit):
+def time_converter(value: float, from_unit: str, to_unit: str) -> float:
     """
     Convert time between different units.
     
@@ -40,7 +40,7 @@ def time_converter(value, from_unit, to_unit):
     return seconds / conversions[to_unit]
 
 
-def main():
+def main() -> None:
     """Demonstrate time conversion examples"""
     
     print("Time Conversion Examples")

@@ -7,6 +7,12 @@ Demonstrates basic usage of the data science libraries mentioned in the notebook
 - Matplotlib (visualization)
 """
 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import pandas as pd
+    import numpy as np
+
 try:
     import pandas as pd
     import numpy as np
@@ -18,14 +24,14 @@ except ImportError as e:
     LIBRARIES_AVAILABLE = False
 
 
-def numpy_demo():
+def numpy_demo() -> None:
     """Demonstrate NumPy operations"""
     print("=" * 50)
     print("NumPy Examples")
     print("=" * 50)
     
     # Create a NumPy array
-    arr = np.array([1, 2, 3, 4, 5])
+    arr: np.ndarray = np.array([1, 2, 3, 4, 5])
     print(f"NumPy array: {arr}")
     print(f"Mean: {np.mean(arr)}")
     print(f"Sum: {np.sum(arr)}")
@@ -34,14 +40,14 @@ def numpy_demo():
     print()
 
 
-def pandas_demo():
+def pandas_demo() -> None:
     """Demonstrate Pandas operations"""
     print("=" * 50)
     print("Pandas Examples")
     print("=" * 50)
     
     # Create a simple DataFrame
-    df = pd.DataFrame({
+    df: pd.DataFrame = pd.DataFrame({
         'A': [1, 2, 3, 4],
         'B': [4, 5, 6, 7],
         'C': [7, 8, 9, 10]
@@ -62,8 +68,8 @@ def matplotlib_demo():
     print("=" * 50)
     
     # Create a simple plot
-    x = [1, 2, 3, 4]
-    y = [1, 4, 9, 16]
+    x: list = [1, 2, 3, 4]
+    y: list = [1, 4, 9, 16]
     
     plt.figure(figsize=(8, 6))
     plt.plot(x, y, marker='o', linestyle='-', linewidth=2, markersize=8)
@@ -83,7 +89,7 @@ def matplotlib_demo():
     print()
 
 
-def main():
+def main() -> None:
     """Main function to run all demonstrations"""
     if not LIBRARIES_AVAILABLE:
         return

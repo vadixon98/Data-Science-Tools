@@ -10,15 +10,15 @@ Examples:
 """
 
 
-def main():
+def main() -> None:
     """Main function to demonstrate arithmetic operations"""
     
     # Basic arithmetic operation from the notebook
-    result1 = (3 * 4) + 5
+    result1: int = (3 * 4) + 5
     print(f"(3 * 4) + 5 = {result1}")
     
     # Time conversion utility
-    def minutes_to_hours(minutes):
+    def minutes_to_hours(minutes: float) -> float:
         """Convert minutes to hours"""
         return minutes / 60
     

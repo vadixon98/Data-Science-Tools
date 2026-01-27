@@ -5,12 +5,13 @@ Simple script to run all example scripts in sequence.
 Useful for verifying everything works correctly.
 """
 
+import os
 import subprocess
 import sys
-import os
+from typing import List
 
 
-def run_script(script_name):
+def run_script(script_name: str) -> bool:
     """Run a Python script and display results"""
     script_path = os.path.join(os.path.dirname(__file__), script_name)
     
@@ -39,7 +40,7 @@ def run_script(script_name):
         return False
 
 
-def main():
+def main() -> None:
     """Run all example scripts"""
     scripts = [
         'arithmetic_operations.py',
@@ -51,7 +52,7 @@ def main():
     print("Running All Example Scripts")
     print("="*60)
     
-    results = []
+    results: List[bool] = []
     for script in scripts:
         results.append(run_script(script))
     
@@ -59,8 +60,8 @@ def main():
     print("Summary")
     print("="*60)
     
-    successful = sum(results)
-    total = len(results)
+    successful: int = sum(results)
+    total: int = len(results)
     
     print(f"\n✅ Successful: {successful}/{total}")
     print(f"❌ Failed: {total - successful}/{total}")
