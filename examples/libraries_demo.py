@@ -17,11 +17,11 @@ try:
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
-    LIBRARIES_AVAILABLE = True
+    LIBRARIES_AVAILABLE: bool = True
 except ImportError as e:
     print(f"Warning: Some libraries are not installed. {e}")
     print("Please install required packages: pip install pandas numpy matplotlib")
-    LIBRARIES_AVAILABLE = False
+    LIBRARIES_AVAILABLE: bool = False
 
 
 def numpy_demo() -> None:
@@ -61,7 +61,7 @@ def pandas_demo() -> None:
     print()
 
 
-def matplotlib_demo():
+def matplotlib_demo() -> None:
     """Demonstrate Matplotlib visualization"""
     print("=" * 50)
     print("Matplotlib Examples")
@@ -80,8 +80,8 @@ def matplotlib_demo():
     
     # Save the plot
     import os
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_file = os.path.join(script_dir, 'plot.png')
+    script_dir: str = os.path.dirname(os.path.abspath(__file__))
+    output_file: str = os.path.join(script_dir, 'plot.png')
     plt.savefig(output_file, dpi=150, bbox_inches='tight')
     print(f"Plot saved as '{output_file}'")
     print("Note: Close the plot window to continue (if displayed)")

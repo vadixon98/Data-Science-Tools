@@ -5,6 +5,8 @@ A comprehensive time converter based on the 200/60 example from the notebook.
 Converts time between different units: seconds, minutes, hours, and days.
 """
 
+from typing import Dict
+
 
 def time_converter(value: float, from_unit: str, to_unit: str) -> float:
     """
@@ -22,7 +24,7 @@ def time_converter(value: float, from_unit: str, to_unit: str) -> float:
         >>> time_converter(200, 'minutes', 'hours')
         3.3333333333333335
     """
-    conversions = {
+    conversions: Dict[str, int] = {
         'seconds': 1,
         'minutes': 60,
         'hours': 3600,
@@ -36,7 +38,7 @@ def time_converter(value: float, from_unit: str, to_unit: str) -> float:
         raise ValueError(f"Invalid target unit: {to_unit}. Must be one of {list(conversions.keys())}")
     
     # Convert to seconds first, then to target unit
-    seconds = value * conversions[from_unit]
+    seconds: float = value * conversions[from_unit]
     return seconds / conversions[to_unit]
 
 
@@ -47,7 +49,7 @@ def main() -> None:
     print("=" * 40)
     
     # Example from the notebook: 200 minutes to hours
-    result1 = time_converter(200, 'minutes', 'hours')
+    result1: float = time_converter(200, 'minutes', 'hours')
     print(f"200 minutes = {result1:.2f} hours")
     
     # Additional examples

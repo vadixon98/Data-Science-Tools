@@ -22,7 +22,7 @@ def main() -> None:
         """Convert minutes to hours"""
         return minutes / 60
     
-    result2 = minutes_to_hours(200)
+    result2: float = minutes_to_hours(200)
     print(f"200 minutes = {result2} hours")
     print(f"200 minutes = {result2:.2f} hours (rounded to 2 decimals)")
 

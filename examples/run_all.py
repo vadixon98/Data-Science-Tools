@@ -13,7 +13,7 @@ from typing import List
 
 def run_script(script_name: str) -> bool:
     """Run a Python script and display results"""
-    script_path = os.path.join(os.path.dirname(__file__), script_name)
+    script_path: str = os.path.join(os.path.dirname(__file__), script_name)
     
     if not os.path.exists(script_path):
         print(f"⚠️  Script not found: {script_name}")
@@ -24,7 +24,7 @@ def run_script(script_name: str) -> bool:
     print(f"{'='*60}\n")
     
     try:
-        result = subprocess.run(
+        result: subprocess.CompletedProcess = subprocess.run(
             [sys.executable, script_path],
             capture_output=False,
             text=True
