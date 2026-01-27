@@ -36,14 +36,23 @@ Data-Science-Tools/
 ├── 🚫 .gitignore                     # Git ignore rules
 ├── 📜 LICENSE                         # MIT License
 ├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md  # Future script ideas (optional)
+├── 📚 IMPROVEMENTS.md                 # Improvement suggestions and status
+├── 📋 CHANGELOG.md                    # Version history and changes
 ├── 📂 examples/                       # Example Python scripts
+│   ├── README.md                      # Examples documentation
+│   ├── __init__.py
+│   ├── _version_check.py             # Version check utility
+│   ├── arithmetic_operations.py      # Basic arithmetic examples
+│   ├── time_converter.py             # Time conversion utility
+│   ├── libraries_demo.py              # Pandas, NumPy, Matplotlib demos
+│   └── run_all.py                     # Run all examples script
 └── 📂 tests/                          # Unit tests
-    ├── README.md                      # Examples documentation
+    ├── README.md                      # Test documentation
     ├── __init__.py
-    ├── arithmetic_operations.py      # Basic arithmetic examples
-    ├── time_converter.py             # Time conversion utility
-    ├── libraries_demo.py             # Pandas, NumPy, Matplotlib demos
-    └── run_all.py                     # Run all examples script
+    ├── test_arithmetic_operations.py # Tests for arithmetic operations
+    ├── test_time_converter.py        # Tests for time converter
+    ├── test_libraries_demo.py        # Tests for libraries demo
+    └── test_run_all.py                # Tests for run_all script
 ```
 
 ## 🔧 Tools Covered
@@ -148,6 +157,10 @@ Contributions are welcome! Feel free to:
 - 💡 Suggest new features
 - 📝 Improve documentation
 - 🔧 Submit pull requests
+
+## 📋 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes and versions.
 
 ## 📄 License
 
