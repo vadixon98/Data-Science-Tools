@@ -42,7 +42,7 @@ def run_script(script_name: str) -> bool:
 
 def main() -> None:
     """Run all example scripts"""
-    scripts = [
+    scripts: List[str] = [
         'arithmetic_operations.py',
         'time_converter.py',
         'libraries_demo.py'  # This one requires dependencies
