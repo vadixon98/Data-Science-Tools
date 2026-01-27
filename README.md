@@ -36,7 +36,8 @@ Data-Science-Tools/
 ├── 🚫 .gitignore                     # Git ignore rules
 ├── 📜 LICENSE                         # MIT License
 ├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md  # Future script ideas (optional)
-└── 📂 examples/                       # Example Python scripts
+├── 📂 examples/                       # Example Python scripts
+└── 📂 tests/                          # Unit tests
     ├── README.md                      # Examples documentation
     ├── __init__.py
     ├── arithmetic_operations.py      # Basic arithmetic examples
@@ -126,6 +127,19 @@ For future script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRI
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [NumPy Documentation](https://numpy.org/doc/)
 - [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+
+## 🧪 Testing
+
+Run unit tests to verify everything works:
+```bash
+# Run all tests
+python -m unittest discover tests
+
+# Run with verbose output
+python -m unittest discover tests -v
+```
+
+See [tests/README.md](tests/README.md) for more details.
 
 ## 🤝 Contributing
 

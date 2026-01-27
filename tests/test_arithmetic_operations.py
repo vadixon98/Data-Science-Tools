@@ -10,7 +10,7 @@ from io import StringIO
 # Add parent directory to path to import examples
 sys.path.insert(0, 'examples')
 
-from arithmetic_operations import main, minutes_to_hours
+from arithmetic_operations import main
 
 
 class TestArithmeticOperations(unittest.TestCase):
@@ -21,9 +21,9 @@ class TestArithmeticOperations(unittest.TestCase):
         result = (3 * 4) + 5
         self.assertEqual(result, 17)
     
-    def test_minutes_to_hours_function(self):
-        """Test the minutes_to_hours function"""
-        # Test the function directly (it's defined inside main, so we test the logic)
+    def test_minutes_to_hours_logic(self):
+        """Test the minutes_to_hours logic (function is nested in main)"""
+        # Test the conversion logic directly
         result = 200 / 60
         self.assertAlmostEqual(result, 3.3333333333333335, places=10)
         
