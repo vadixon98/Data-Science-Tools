@@ -3,6 +3,7 @@
 # 🚀 Data Science Tools & Ecosystem
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
 ![Data Science](https://img.shields.io/badge/Data%20Science-FF6B6B?style=for-the-badge&logo=data&logoColor=white)
 
@@ -38,6 +39,7 @@ Data-Science-Tools/
 ├── 📚 EXAMPLE_SCRIPTS_SUGGESTIONS.md  # Future script ideas (optional)
 ├── 📚 IMPROVEMENTS.md                 # Improvement suggestions and status
 ├── 📋 CHANGELOG.md                    # Version history and changes
+├── 📋 FINAL_SUGGESTIONS.md            # Optional polish suggestions
 ├── 📂 examples/                       # Example Python scripts
 │   ├── README.md                      # Examples documentation
 │   ├── __init__.py
