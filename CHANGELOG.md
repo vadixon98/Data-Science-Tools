@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - tests/README.md for testing instructions
   - EXAMPLE_SCRIPTS_SUGGESTIONS.md for future enhancements
   - IMPROVEMENTS.md tracking improvement suggestions
+  - CHANGELOG.md for version history
+  - FINAL_SUGGESTIONS.md for optional polish items
+  - PROJECT_STATUS.md for completed improvements summary
 - Project files:
   - requirements.txt for Python dependencies
   - .gitignore for version control
@@ -44,6 +47,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Streamlined documentation for better readability
 - Improved code organization and structure
+- README: Python 3.7+ badge, PROJECT_STATUS.md and FINAL_SUGGESTIONS.md in repo contents
+- Contributing section: link to run tests before submitting and to FINAL_SUGGESTIONS.md
 
 ---
 

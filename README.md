@@ -22,8 +22,10 @@ This repository contains educational materials and resources about **Data Scienc
 ## ✨ Features
 
 - 📓 **Interactive Notebook** - HTML notebook exploring data science tools
-- 💻 **Example Scripts** - Ready-to-run Python scripts demonstrating key concepts
+- 💻 **Example Scripts** - Ready-to-run Python scripts (type-hinted, Python 3.7+)
+- 🧪 **Unit Tests** - Full test suite; run with `python -m unittest discover tests`
 - 📚 **Educational Resources** - Tools, libraries, and ecosystem overview
+- 🔧 **Troubleshooting** - Common issues and platform notes in README
 
 ## 📁 Repository Contents
 
@@ -40,6 +42,7 @@ Data-Science-Tools/
 ├── 📚 IMPROVEMENTS.md                 # Improvement suggestions and status
 ├── 📋 CHANGELOG.md                    # Version history and changes
 ├── 📋 FINAL_SUGGESTIONS.md            # Optional polish suggestions
+├── 📊 PROJECT_STATUS.md               # Completed improvements summary
 ├── 📂 examples/                       # Example Python scripts
 │   ├── README.md                      # Examples documentation
 │   ├── __init__.py
@@ -159,6 +162,9 @@ Contributions are welcome! Feel free to:
 - 💡 Suggest new features
 - 📝 Improve documentation
 - 🔧 Submit pull requests
+
+**Before submitting:** Run tests with `python -m unittest discover tests`.  
+Optional next steps (CONTRIBUTING.md, release tag) are in [FINAL_SUGGESTIONS.md](FINAL_SUGGESTIONS.md).
 
 ## 📋 Changelog
 
