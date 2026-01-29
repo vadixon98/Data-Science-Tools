@@ -4,18 +4,33 @@ Your repository is **production-ready**. These are optional polish items, in ord
 
 ---
 
+## ✅ Still to do (optional)
+
+| # | Task | Status |
+|---|------|--------|
+| 1 | Add CONTRIBUTING.md | ⬜ Not done |
+| 2 | Python version badge in README | ✅ Done |
+| 3 | Tag release v1.0.0 (in GitHub) | ⬜ Not done |
+| 4 | Add pyproject.toml | ⬜ Not done |
+| 5 | Add GitHub Actions test workflow | ⬜ Not done |
+| 6 | Add .editorconfig | ⬜ Not done |
+
+Everything else in this doc is “nice to have” or “skip for now.”
+
+---
+
 ## Quick Wins (≈15 min each)
 
-### 1. **Add CONTRIBUTING.md**
+### 1. **Add CONTRIBUTING.md** ⬜
 - One-page guide: how to fork, branch, run tests, submit a PR
 - Mention: run `python -m unittest discover tests` before submitting
 - **Why:** Makes it clear how others can contribute
 
-### 2. **Add a Python version badge to README**
+### 2. **Add a Python version badge to README** ✅ DONE
 - Add near the top: `![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)`
 - **Why:** Sets expectations at a glance
 
-### 3. **Tag a release (e.g. v1.0.0)**
+### 3. **Tag a release (e.g. v1.0.0)** ⬜
 - In GitHub: Releases → Create a new release → tag `v1.0.0`
 - **Why:** Gives the project a clear “first stable” milestone
 
@@ -23,16 +38,16 @@ Your repository is **production-ready**. These are optional polish items, in ord
 
 ## Medium Effort (≈30–60 min)
 
-### 4. **Add pyproject.toml**
+### 4. **Add pyproject.toml** ⬜
 - Minimal `[project]` with name, version, description, requires-python
 - Optional: `[tool.black]` or `[tool.ruff]` for consistent formatting
 - **Why:** Standard, tool-friendly project config
 
-### 5. **Add a simple GitHub Actions workflow**
+### 5. **Add a simple GitHub Actions workflow** ⬜
 - Single job: run tests on push/PR (`python -m unittest discover tests`)
 - **Why:** Automated checks; can add a “tests passing” badge
 
-### 6. **Add .editorconfig**
+### 6. **Add .editorconfig** ⬜
 - Indent size, line ending, trim trailing whitespace
 - **Why:** Consistent style across editors with no extra deps
 
