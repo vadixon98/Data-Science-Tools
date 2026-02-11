@@ -129,7 +129,9 @@ For future script suggestions, see [EXAMPLE_SCRIPTS_SUGGESTIONS.md](EXAMPLE_SCRI
 - **Virtual Environments:** Recommended to use a virtual environment:
   ```bash
   python -m venv venv
-  source venv/bin/activate  # On Windows: venv\Scripts\activate
+  # On Windows (Command Prompt): venv\Scripts\activate
+  # On Windows (PowerShell):    .\venv\Scripts\Activate.ps1
+  # On macOS/Linux:             source venv/bin/activate
   pip install -r requirements.txt
   ```
 
